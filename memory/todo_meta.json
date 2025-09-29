@@ -12,14 +12,14 @@
         "id": "2",
         "content": "فعال‌سازی GitHub Pages",
         "details": "فعال کردن GitHub Pages در repository settings، تنظیم source به GitHub Actions، و deploy کردن سایت",
-        "status": "in_progress",
+        "status": "completed",
         "priority": "high"
       },
       "3": {
         "id": "3",
         "content": "تست و تأیید عملکرد GitHub Pages",
         "details": "بررسی لینک GitHub Pages، تست عملکرد سایت، و ارائه لینک نهایی به کاربر",
-        "status": "pending",
+        "status": "completed",
         "priority": "medium"
       }
     }
