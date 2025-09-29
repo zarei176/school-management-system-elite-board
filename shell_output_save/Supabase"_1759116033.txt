@@ -1,0 +1,305 @@
+[master (root-commit) aca6613] Initial commit: اپلیکیشن مدرسه هیات امنایی نخبگان - سیستم مدیریت دانش‌آموزان با React، TypeScript و Supabase
+ 303 files changed, 18630 insertions(+)
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052301.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052331.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052449.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052530.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052616.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052640.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052703.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052835.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052902.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_052945.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053049.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053135.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053218.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053305.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053353.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053433.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053503.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053550.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053629.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_053704.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_054816.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_054902.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_054930.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_054949.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055011.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055207.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055238.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055306.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055337.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055404.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055442.png
+ create mode 100644 .browser_screenshots/visual_feedback_20250929_055518.png
+ create mode 100644 .gitignore
+ create mode 100644 admin_login_test_report.md
+ create mode 100644 browser/browser_extension/error_capture/background.js
+ create mode 100644 browser/browser_extension/error_capture/content.js
+ create mode 100644 browser/browser_extension/error_capture/injector.js
+ create mode 100644 browser/browser_extension/error_capture/manifest.json
+ create mode 100644 browser/global_browser.py
+ create mode 100644 browser/screenshots/class_filter_dropdown.png
+ create mode 100644 browser/screenshots/final_form_state.png
+ create mode 100644 browser/screenshots/final_homepage_test.png
+ create mode 100644 browser/screenshots/form_filled.png
+ create mode 100644 browser/screenshots/search_test_ali.png
+ create mode 100644 browser/user_data/BrowserMetrics-spare.pma
+ create mode 100644 browser/user_data/Default/Account Web Data
+ create mode 100644 browser/user_data/Default/Account Web Data-journal
+ create mode 100644 browser/user_data/Default/Affiliation Database
+ create mode 100644 browser/user_data/Default/Affiliation Database-journal
+ create mode 100644 browser/user_data/Default/AutofillStrikeDatabase/LOCK
+ create mode 100644 browser/user_data/Default/AutofillStrikeDatabase/LOG
+ create mode 100644 browser/user_data/Default/BrowsingTopicsSiteData
+ create mode 100644 browser/user_data/Default/BrowsingTopicsSiteData-journal
+ create mode 100644 browser/user_data/Default/BrowsingTopicsState
+ create mode 100644 browser/user_data/Default/BudgetDatabase/LOCK
+ create mode 100644 browser/user_data/Default/BudgetDatabase/LOG
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/40be14531dc720d7_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/500fcb6508bdcdc3_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/5b38f9f8eaccb58a_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/5cbad46da1534939_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/7947cb12bf2da157_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/975e6cf81c875e1d_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/c726522bc3a2b3cb_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/cf00e6b29cae4027_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/e716149064f07ac5_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/eaba574cbe74359b_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/ed5152d08612b2ae_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/f43d2a898ddd0c8f_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/fa850b1146bac521_0
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/index
+ create mode 100644 browser/user_data/Default/Cache/Cache_Data/index-dir/the-real-index
+ create mode 100644 browser/user_data/Default/ClientCertificates/LOCK
+ create mode 100644 browser/user_data/Default/ClientCertificates/LOG
+ create mode 100644 browser/user_data/Default/Code Cache/js/9c90eb38290d1314_0
+ create mode 100644 browser/user_data/Default/Code Cache/js/ca8daec858b2a5f5_0
+ create mode 100644 browser/user_data/Default/Code Cache/js/index
+ create mode 100644 browser/user_data/Default/Code Cache/js/index-dir/the-real-index
+ create mode 100644 browser/user_data/Default/Code Cache/wasm/index
+ create mode 100644 browser/user_data/Default/Code Cache/wasm/index-dir/the-real-index
+ create mode 100644 browser/user_data/Default/Cookies
+ create mode 100644 browser/user_data/Default/Cookies-journal
+ create mode 100644 browser/user_data/Default/DIPS
+ create mode 100644 browser/user_data/Default/DIPS-shm
+ create mode 100644 browser/user_data/Default/DIPS-wal
+ create mode 100644 browser/user_data/Default/DawnGraphiteCache/data_0
+ create mode 100644 browser/user_data/Default/DawnGraphiteCache/data_1
+ create mode 100644 browser/user_data/Default/DawnGraphiteCache/data_2
+ create mode 100644 browser/user_data/Default/DawnGraphiteCache/data_3
+ create mode 100644 browser/user_data/Default/DawnGraphiteCache/index
+ create mode 100644 browser/user_data/Default/DawnWebGPUCache/data_0
+ create mode 100644 browser/user_data/Default/DawnWebGPUCache/data_1
+ create mode 100644 browser/user_data/Default/DawnWebGPUCache/data_2
+ create mode 100644 browser/user_data/Default/DawnWebGPUCache/data_3
+ create mode 100644 browser/user_data/Default/DawnWebGPUCache/index
+ create mode 100644 browser/user_data/Default/Download Service/EntryDB/LOCK
+ create mode 100644 browser/user_data/Default/Download Service/EntryDB/LOG
+ create mode 100644 browser/user_data/Default/Extension Rules/CURRENT
+ create mode 100644 browser/user_data/Default/Extension Rules/LOCK
+ create mode 100644 browser/user_data/Default/Extension Rules/LOG
+ create mode 100644 browser/user_data/Default/Extension Rules/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Extension Scripts/CURRENT
+ create mode 100644 browser/user_data/Default/Extension Scripts/LOCK
+ create mode 100644 browser/user_data/Default/Extension Scripts/LOG
+ create mode 100644 browser/user_data/Default/Extension Scripts/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Extension State/CURRENT
+ create mode 100644 browser/user_data/Default/Extension State/LOCK
+ create mode 100644 browser/user_data/Default/Extension State/LOG
+ create mode 100644 browser/user_data/Default/Extension State/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Favicons
+ create mode 100644 browser/user_data/Default/Favicons-journal
+ create mode 100644 browser/user_data/Default/Feature Engagement Tracker/AvailabilityDB/LOCK
+ create mode 100644 browser/user_data/Default/Feature Engagement Tracker/AvailabilityDB/LOG
+ create mode 100644 browser/user_data/Default/Feature Engagement Tracker/EventDB/LOCK
+ create mode 100644 browser/user_data/Default/Feature Engagement Tracker/EventDB/LOG
+ create mode 100644 browser/user_data/Default/GCM Store/Encryption/CURRENT
+ create mode 100644 browser/user_data/Default/GCM Store/Encryption/LOCK
+ create mode 100644 browser/user_data/Default/GCM Store/Encryption/LOG
+ create mode 100644 browser/user_data/Default/GCM Store/Encryption/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/GPUCache/data_0
+ create mode 100644 browser/user_data/Default/GPUCache/data_1
+ create mode 100644 browser/user_data/Default/GPUCache/data_2
+ create mode 100644 browser/user_data/Default/GPUCache/data_3
+ create mode 100644 browser/user_data/Default/GPUCache/index
+ create mode 100644 browser/user_data/Default/History
+ create mode 100644 browser/user_data/Default/History-journal
+ create mode 100644 browser/user_data/Default/LOCK
+ create mode 100644 browser/user_data/Default/LOG
+ create mode 100644 browser/user_data/Default/Local Storage/leveldb/CURRENT
+ create mode 100644 browser/user_data/Default/Local Storage/leveldb/LOCK
+ create mode 100644 browser/user_data/Default/Local Storage/leveldb/LOG
+ create mode 100644 browser/user_data/Default/Local Storage/leveldb/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Login Data
+ create mode 100644 browser/user_data/Default/Login Data For Account
+ create mode 100644 browser/user_data/Default/Login Data For Account-journal
+ create mode 100644 browser/user_data/Default/Login Data-journal
+ create mode 100644 browser/user_data/Default/Network Action Predictor
+ create mode 100644 browser/user_data/Default/Network Action Predictor-journal
+ create mode 100644 browser/user_data/Default/Network Persistent State
+ create mode 100644 browser/user_data/Default/PersistentOriginTrials/LOCK
+ create mode 100644 browser/user_data/Default/PersistentOriginTrials/LOG
+ create mode 100644 browser/user_data/Default/Preferences
+ create mode 100644 browser/user_data/Default/PreferredApps
+ create mode 100644 browser/user_data/Default/README
+ create mode 100644 browser/user_data/Default/Reporting and NEL
+ create mode 100644 browser/user_data/Default/Reporting and NEL-journal
+ create mode 100644 browser/user_data/Default/SCT Auditing Pending Reports
+ create mode 100644 browser/user_data/Default/Safe Browsing Cookies
+ create mode 100644 browser/user_data/Default/Safe Browsing Cookies-journal
+ create mode 100644 browser/user_data/Default/Secure Preferences
+ create mode 100644 browser/user_data/Default/Segmentation Platform/SegmentInfoDB/LOCK
+ create mode 100644 browser/user_data/Default/Segmentation Platform/SegmentInfoDB/LOG
+ create mode 100644 browser/user_data/Default/Segmentation Platform/SignalDB/LOCK
+ create mode 100644 browser/user_data/Default/Segmentation Platform/SignalDB/LOG
+ create mode 100644 browser/user_data/Default/Segmentation Platform/SignalStorageConfigDB/LOCK
+ create mode 100644 browser/user_data/Default/Segmentation Platform/SignalStorageConfigDB/LOG
+ create mode 100644 browser/user_data/Default/Service Worker/Database/CURRENT
+ create mode 100644 browser/user_data/Default/Service Worker/Database/LOCK
+ create mode 100644 browser/user_data/Default/Service Worker/Database/LOG
+ create mode 100644 browser/user_data/Default/Service Worker/Database/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_0
+ create mode 100644 browser/user_data/Default/Service Worker/ScriptCache/2cc80dabc69f58b6_1
+ create mode 100644 browser/user_data/Default/Service Worker/ScriptCache/index
+ create mode 100644 browser/user_data/Default/Service Worker/ScriptCache/index-dir/the-real-index
+ create mode 100644 browser/user_data/Default/Session Storage/CURRENT
+ create mode 100644 browser/user_data/Default/Session Storage/LOCK
+ create mode 100644 browser/user_data/Default/Session Storage/LOG
+ create mode 100644 browser/user_data/Default/Session Storage/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Sessions/Session_13403568162543430
+ create mode 100644 browser/user_data/Default/Shared Dictionary/cache/index
+ create mode 100644 browser/user_data/Default/Shared Dictionary/cache/index-dir/the-real-index
+ create mode 100644 browser/user_data/Default/Shared Dictionary/db
+ create mode 100644 browser/user_data/Default/Shared Dictionary/db-journal
+ create mode 100644 browser/user_data/Default/SharedStorage
+ create mode 100644 browser/user_data/Default/SharedStorage-wal
+ create mode 100644 browser/user_data/Default/Shortcuts
+ create mode 100644 browser/user_data/Default/Shortcuts-journal
+ create mode 100644 browser/user_data/Default/Site Characteristics Database/CURRENT
+ create mode 100644 browser/user_data/Default/Site Characteristics Database/LOCK
+ create mode 100644 browser/user_data/Default/Site Characteristics Database/LOG
+ create mode 100644 browser/user_data/Default/Site Characteristics Database/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Sync Data/LevelDB/CURRENT
+ create mode 100644 browser/user_data/Default/Sync Data/LevelDB/LOCK
+ create mode 100644 browser/user_data/Default/Sync Data/LevelDB/LOG
+ create mode 100644 browser/user_data/Default/Sync Data/LevelDB/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/Top Sites
+ create mode 100644 browser/user_data/Default/Top Sites-journal
+ create mode 100644 browser/user_data/Default/TransportSecurity
+ create mode 100644 browser/user_data/Default/Trust Tokens
+ create mode 100644 browser/user_data/Default/Trust Tokens-journal
+ create mode 100644 browser/user_data/Default/Web Data
+ create mode 100644 browser/user_data/Default/Web Data-journal
+ create mode 100644 browser/user_data/Default/WebStorage/QuotaManager
+ create mode 100644 browser/user_data/Default/WebStorage/QuotaManager-journal
+ create mode 100644 browser/user_data/Default/chrome_cart_db/LOCK
+ create mode 100644 browser/user_data/Default/chrome_cart_db/LOG
+ create mode 100644 browser/user_data/Default/commerce_subscription_db/LOCK
+ create mode 100644 browser/user_data/Default/commerce_subscription_db/LOG
+ create mode 100644 browser/user_data/Default/discounts_db/LOCK
+ create mode 100644 browser/user_data/Default/discounts_db/LOG
+ create mode 100644 browser/user_data/Default/heavy_ad_intervention_opt_out.db-journal
+ create mode 100644 browser/user_data/Default/optimization_guide_hint_cache_store/LOCK
+ create mode 100644 browser/user_data/Default/optimization_guide_hint_cache_store/LOG
+ create mode 100644 browser/user_data/Default/parcel_tracking_db/LOCK
+ create mode 100644 browser/user_data/Default/parcel_tracking_db/LOG
+ create mode 100644 browser/user_data/Default/passkey_enclave_state
+ create mode 100644 browser/user_data/Default/shared_proto_db/CURRENT
+ create mode 100644 browser/user_data/Default/shared_proto_db/LOCK
+ create mode 100644 browser/user_data/Default/shared_proto_db/LOG
+ create mode 100644 browser/user_data/Default/shared_proto_db/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/shared_proto_db/metadata/CURRENT
+ create mode 100644 browser/user_data/Default/shared_proto_db/metadata/LOCK
+ create mode 100644 browser/user_data/Default/shared_proto_db/metadata/LOG
+ create mode 100644 browser/user_data/Default/shared_proto_db/metadata/MANIFEST-000001
+ create mode 100644 browser/user_data/Default/trusted_vault.pb
+ create mode 100644 browser/user_data/Dictionaries/en-US-10-1.bdic
+ create mode 100644 browser/user_data/GrShaderCache/data_0
+ create mode 100644 browser/user_data/GrShaderCache/data_1
+ create mode 100644 browser/user_data/GrShaderCache/data_2
+ create mode 100644 browser/user_data/GrShaderCache/data_3
+ create mode 100644 browser/user_data/GrShaderCache/index
+ create mode 100644 browser/user_data/GraphiteDawnCache/data_0
+ create mode 100644 browser/user_data/GraphiteDawnCache/data_1
+ create mode 100644 browser/user_data/GraphiteDawnCache/data_2
+ create mode 100644 browser/user_data/GraphiteDawnCache/data_3
+ create mode 100644 browser/user_data/GraphiteDawnCache/index
+ create mode 100644 browser/user_data/Last Version
+ create mode 100644 browser/user_data/Local State
+ create mode 100644 browser/user_data/ShaderCache/data_0
+ create mode 100644 browser/user_data/ShaderCache/data_1
+ create mode 100644 browser/user_data/ShaderCache/data_2
+ create mode 100644 browser/user_data/ShaderCache/data_3
+ create mode 100644 browser/user_data/ShaderCache/index
+ create mode 120000 browser/user_data/SingletonCookie
+ create mode 120000 browser/user_data/SingletonLock
+ create mode 120000 browser/user_data/SingletonSocket
+ create mode 100644 browser/user_data/Variations
+ create mode 100644 browser/user_data/component_crx_cache/metadata.json
+ create mode 100644 browser/user_data/extensions_crx_cache/metadata.json
+ create mode 100644 browser/user_data/first_party_sets.db-journal
+ create mode 100644 browser/user_data/segmentation_platform/ukm_db
+ create mode 100644 browser/user_data/segmentation_platform/ukm_db-wal
+ create mode 100644 deploy_url.txt
+ create mode 100644 external_api/__init__.py
+ create mode 100644 external_api/data_sources/__init__.py
+ create mode 100644 external_api/data_sources/base.py
+ create mode 100644 external_api/data_sources/booking_source.py
+ create mode 100644 external_api/data_sources/client.py
+ create mode 100644 external_api/data_sources/commodities_source.py
+ create mode 100644 external_api/data_sources/metal_source.py
+ create mode 100644 external_api/data_sources/patents_source.py
+ create mode 100644 external_api/data_sources/pinterest_source.py
+ create mode 100644 external_api/data_sources/scholar_source.py
+ create mode 100644 external_api/data_sources/tripadvisor_source.py
+ create mode 100644 external_api/data_sources/twitter_source.py
+ create mode 100644 external_api/data_sources/yahoo_source.py
+ create mode 100644 external_api/function_utils.py
+ create mode 100644 external_api/mcp_function_list.json
+ create mode 100644 memory/todo_meta.json
+ create mode 100644 pyproject.toml
+ create mode 100644 sample_expected_students.csv
+ create mode 100755 school-management-system/.gitignore
+ create mode 100755 school-management-system/.npmrc
+ create mode 100755 school-management-system/README.md
+ create mode 100755 school-management-system/components.json
+ create mode 100755 school-management-system/eslint.config.js
+ create mode 100755 school-management-system/index.html
+ create mode 100755 school-management-system/package.json
+ create mode 100755 school-management-system/pnpm-lock.yaml
+ create mode 100755 school-management-system/postcss.config.js
+ create mode 100644 school-management-system/public/logo.jpg
+ create mode 100755 school-management-system/public/use.txt
+ create mode 100755 school-management-system/src/App.css
+ create mode 100755 school-management-system/src/App.tsx
+ create mode 100644 school-management-system/src/components/Dashboard.tsx
+ create mode 100755 school-management-system/src/components/ErrorBoundary.tsx
+ create mode 100644 school-management-system/src/components/Header.tsx
+ create mode 100644 school-management-system/src/components/Login.tsx
+ create mode 100644 school-management-system/src/components/ProtectedRoute.tsx
+ create mode 100644 school-management-system/src/components/StudentDetails.tsx
+ create mode 100644 school-management-system/src/components/StudentForm.tsx
+ create mode 100644 school-management-system/src/components/TrackingSystem.tsx
+ create mode 100644 school-management-system/src/contexts/AuthContext.tsx
+ create mode 100755 school-management-system/src/hooks/use-mobile.tsx
+ create mode 100755 school-management-system/src/index.css
+ create mode 100644 school-management-system/src/lib/database.ts
+ create mode 100644 school-management-system/src/lib/supabase.ts
+ create mode 100755 school-management-system/src/lib/utils.ts
+ create mode 100755 school-management-system/src/main.tsx
+ create mode 100755 school-management-system/src/vite-env.d.ts
+ create mode 100755 school-management-system/tailwind.config.js
+ create mode 100755 school-management-system/tsconfig.app.json
+ create mode 100755 school-management-system/tsconfig.json
+ create mode 100755 school-management-system/tsconfig.node.json
+ create mode 100755 school-management-system/vite.config.ts
+ create mode 100644 school_logo.jpg
+ create mode 100644 supabase/tables/admin_users.sql
+ create mode 100644 supabase/tables/expected_students.sql
+ create mode 100644 supabase/tables/students.sql
+ create mode 120000 tmp
+ create mode 100644 workspace.json
+ create mode 100644 "\330\252\330\263\330\252_\331\205\330\255\330\257\331\210\330\257\333\214\330\252_\330\257\330\263\330\252\330\261\330\263\333\214_\332\251\330\247\330\261\330\250\330\261\330\247\331\206.docx"
+ create mode 100644 "\330\252\330\263\330\252_\331\205\330\255\330\257\331\210\330\257\333\214\330\252_\330\257\330\263\330\252\330\261\330\263\333\214_\332\251\330\247\330\261\330\250\330\261\330\247\331\206.md"
+ create mode 100644 "\330\252\330\263\330\252_\331\205\330\255\330\257\331\210\330\257\333\214\330\252_\330\257\330\263\330\252\330\261\330\263\333\214_\332\251\330\247\330\261\330\250\330\261\330\247\331\206.pdf"
