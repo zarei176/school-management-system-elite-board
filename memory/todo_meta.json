@@ -5,14 +5,14 @@
         "id": "1",
         "content": "آماده‌سازی پروژه برای GitHub Pages",
         "details": "تنظیم build configuration، ایجاد GitHub Actions workflow، و آماده‌سازی فایل‌های static deployment",
-        "status": "pending",
+        "status": "completed",
         "priority": "high"
       },
       "2": {
         "id": "2",
         "content": "فعال‌سازی GitHub Pages",
         "details": "فعال کردن GitHub Pages در repository settings، تنظیم source به GitHub Actions، و deploy کردن سایت",
-        "status": "pending",
+        "status": "in_progress",
         "priority": "high"
       },
       "3": {
