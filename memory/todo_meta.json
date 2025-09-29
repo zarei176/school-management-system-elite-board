@@ -3,17 +3,24 @@
     "Coordinator": {
       "1": {
         "id": "1",
-        "content": "پیاده‌سازی سیستم احراز هویت مدیریتی",
-        "details": "اضافه کردن صفحه login برای مدیر سیستم با نام کاربری admin و رمز عبور iran@1404. محدود کردن دسترسی به داشبورد مدیریتی، صادرات اکسل، آپلود فایل و سایر عملکردهای مدیریتی فقط به مدیر احراز هویت شده. فرم ثبت اطلاعات دانش‌آموز باید برای همه قابل دسترسی باشد.",
-        "status": "completed",
+        "content": "آماده‌سازی پروژه برای GitHub Pages",
+        "details": "تنظیم build configuration، ایجاد GitHub Actions workflow، و آماده‌سازی فایل‌های static deployment",
+        "status": "pending",
         "priority": "high"
       },
       "2": {
         "id": "2",
-        "content": "تست کامل سیستم احراز هویت",
-        "details": "تست login مدیر، محدودیت دسترسی کاربران غیرمجاز، و عملکرد صحیح قسمت‌های مختلف سیستم",
-        "status": "completed",
+        "content": "فعال‌سازی GitHub Pages",
+        "details": "فعال کردن GitHub Pages در repository settings، تنظیم source به GitHub Actions، و deploy کردن سایت",
+        "status": "pending",
         "priority": "high"
+      },
+      "3": {
+        "id": "3",
+        "content": "تست و تأیید عملکرد GitHub Pages",
+        "details": "بررسی لینک GitHub Pages، تست عملکرد سایت، و ارائه لینک نهایی به کاربر",
+        "status": "pending",
+        "priority": "medium"
       }
     }
   }
