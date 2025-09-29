@@ -166,6 +166,57 @@ pnpm dev
 pnpm build
 ```
 
+7. **Build برای GitHub Pages:**
+```bash
+pnpm build:gh-pages
+```
+
+8. **Preview محلی GitHub Pages:**
+```bash
+pnpm preview:gh-pages
+```
+
+## استقرار در GitHub Pages
+
+این پروژه برای استقرار در GitHub Pages آماده‌سازی شده است.
+
+### تنظیمات لازم
+
+1. **تنظیم Secrets در GitHub:**
+   - به `Settings` -> `Secrets and variables` -> `Actions` بروید
+   - دو secret زیر را اضافه کنید:
+     - `VITE_SUPABASE_URL`: آدرس پروژه Supabase
+     - `VITE_SUPABASE_ANON_KEY`: کلید عمومی Supabase
+
+2. **فعال‌سازی GitHub Pages:**
+   - به `Settings` -> `Pages` بروید
+   - در قسمت `Source` گزینه `GitHub Actions` را انتخاب کنید
+
+3. **استقرار خودکار:**
+   - هر push به `main` یا `master` branch، خودکار سایت را build و deploy می‌کند
+   - آدرس نهایی: `https://username.github.io/repository-name/`
+   - برای این پروژه: `https://zarei176.github.io/school-management-system-elite-board/`
+
+### ویژگی‌های GitHub Pages
+
+✅ **Routing Support:** برای SPA routing تنظیم شده
+✅ **Asset Management:** تمام فایل‌های static درست load می‌شوند
+✅ **Progressive Web App:** قابلیت نصب روی موبایل
+✅ **Responsive Design:** سازگار با تمام اندازه صفحه‌ها
+✅ **RTL Support:** پشتیبانی کامل از زبان فارسی
+
+### استقرار دستی
+
+در صورت نیاز به استقرار دستی:
+
+```bash
+# Build پروژه برای GitHub Pages
+pnpm build:gh-pages
+
+# محتویات پوشه dist را در branch gh-pages قرار دهید
+gh-pages -d dist
+```
+
 ## استفاده از سیستم
 
 ### ورود مدیر

@@ -7,8 +7,10 @@
     "dev": "pnpm install --prefer-offline && vite",
     "build": "pnpm install --prefer-offline && rm -rf node_modules/.vite-temp && tsc -b && vite build",
     "build:prod": "pnpm install --prefer-offline && rm -rf node_modules/.vite-temp && tsc -b && BUILD_MODE=prod vite build",
+    "build:gh-pages": "pnpm install --prefer-offline && rm -rf node_modules/.vite-temp && tsc -b && BUILD_MODE=prod vite build --base /school-management-system-elite-board/",
     "lint": "pnpm install --prefer-offline && eslint .",
     "preview": "pnpm install --prefer-offline && vite preview",
+    "preview:gh-pages": "pnpm install --prefer-offline && vite preview --base /school-management-system-elite-board/",
     "install-deps": "pnpm install --prefer-offline",
     "clean": "rm -rf node_modules .pnpm-store pnpm-lock.yaml && pnpm store prune"
   },
